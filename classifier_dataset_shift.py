@@ -99,11 +99,11 @@ train_it = train_datagen.flow_from_directory('./img/train/',
     color_mode="rgb")
     
 test_it = test_datagen.flow_from_directory('./img/test/',
-    # class_mode='categorical',
-    # batch_size=16,
-    # target_size=(100, 100),
-    # shuffle=True,
-    # color_mode="rgb")
+    class_mode='categorical',
+    batch_size=16,
+    target_size=(100, 100),
+    shuffle=True,
+    color_mode="rgb")
 
 val_it = test_datagen.flow_from_directory('./img/validation/',
     class_mode='categorical', 
